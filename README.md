@@ -42,7 +42,7 @@ python app.py
 ![Home](screenshots/home.png)
 
 
-##Authors
+Authors
 
 1.ISHAN
 
