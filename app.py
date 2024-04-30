@@ -32,13 +32,37 @@ def index():
     )
 
 
-@app.route("/player/<int:player_id>")
+@app.route("/player/<player_id>")
 def player(player_id):
     cursor = db.cursor(dictionary=True)
     cursor.execute("SELECT * FROM player WHERE player_id = %s", (player_id,))
     player = cursor.fetchone()
 
     return render_template("player.html", player=player)
+
+@app.route("/team/<team_id>")
+def team(team_id):
+    cursor = db.cursor(dictionary=True)
+    cursor.execute("SELECT * FROM team WHERE team_id = %s", (team_id,))
+    team = cursor.fetchone()
+
+    return render_template("team.html", team=team)
+
+@app.route("/match/<match_id>")
+def match(match_id):
+    cursor = db.cursor(dictionary=True)
+    cursor.execute("SELECT * FROM matches WHERE match_id = %s", (match_id,))
+    match = cursor.fetchone()
+
+    return render_template("match.html", match=match)
+
+@app.route("/umpire/<umpire_id>")
+def umpire(umpire_id):
+    cursor = db.cursor(dictionary=True)
+    cursor.execute("SELECT * FROM umpire WHERE umpire_id = %s", (umpire_id,))
+    umpire = cursor.fetchone()
+
+    return render_template("umpire.html", umpire=umpire)
 
 
 if __name__ == "__main__":

@@ -40,12 +40,3 @@ python app.py
 ## Screenshots
 
 ![Home](screenshots/home.png)
-
-
-Authors
-
-1.ISHAN
-
-2.SAJAL TANDON
-
-3.SHUBHAM KUMAR SINGH
