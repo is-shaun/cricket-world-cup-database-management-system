@@ -27,7 +27,15 @@ This is a database management system for a cricket world cup. The system is desi
 
 1. Create a new database in MySQL
 2. Import the `cricket_world_cup.sql` file to create the tables
-3. Update the database connection details in `config.py`
+3. Create the database connection details in `config.py`
+    ```python
+    db_config = {
+        "host": "localhost",
+        "user": "root",
+        "password": "pass",
+        "database": "cricketwc",
+    }
+    ```
 4. Run the `app.py` file
 
 ```bash
@@ -40,3 +48,9 @@ python app.py
 ## Screenshots
 
 ![Home](screenshots/home.png)
+
+## Authors
+
+- Ishan
+- Shubham
+- Sajal
