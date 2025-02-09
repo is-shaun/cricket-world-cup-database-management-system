@@ -52,5 +52,3 @@ python app.py
 ## Authors
 
 - Ishan
-- Shubham
-- Sajal
